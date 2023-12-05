@@ -1,0 +1,144 @@
+/* ESTILO GLOBALES */
+
+body {  
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+/* HEADER */
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+}
+
+nav {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo img {
+    height: 72px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 16px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1.5px solid transparent;
+    transition: border-color 0.3s ease;
+    padding: 16px 32px;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    border-color: #ccc;
+}
+
+.nav-links .btn-contacto {
+    background-color: black;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 4px;
+}
+
+/* MAIN */
+
+#portada {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 100px 20px; /* Ajusta el espaciado según tus preferencias */
+    height: 40vh; /* 100% de la altura de la ventana */
+    overflow: hidden; /* Evita que el contenido salga del área de la portada */
+}
+
+.portada-content {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto; /* Centra el contenido en la portada */
+}
+
+.portada-content h1 {
+    font-size: 2em;
+}
+
+.portada-content p {
+    font-size: 1.2em;
+}
+
+/* Animación de fondo */
+#portada::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #000, #fff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* CASOS INDEX */
+#casos_index article{
+    display: inline-block;
+    height: 250px;
+    width: 350px;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#caso1 { 
+    background-image: url(../img/caso1.jpg);
+}
+
+#caso2 { 
+    background-image: url(../img/caso2.jpg);
+}
+
+#caso3 { 
+    background-image: url(../img/caso3.jpg);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer li { 
+    display: inline-block;
+}
