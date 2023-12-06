@@ -57,26 +57,22 @@ nav {
 
 /* MAIN */
 main { 
-    background-color: #ffffff;
+    background-color: #000;
 }
 
-.container {
-    max-width: 1440px;
-    background-color: aqua;
-}
-
-#portada { 
+#portada {
     position: relative;
     text-align: left;
     height: 60vh;
     overflow: hidden;
-    display: flex;
     align-items: center;
-    background: gray;
+    background: white
 }
 
 .portada-content {
-
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .portada-content h1 {
@@ -93,9 +89,24 @@ main {
 
 /* CASOS INDEX */
 
-.col article {
-    height: 480px;
+#casos_index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.caso {
+    display: flex;
+    flex-direction: column;
     border-radius: 8px;
+    overflow: hidden;
+}
+
+#casos_index article {
+    height: 480px;
+    padding: 8px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
