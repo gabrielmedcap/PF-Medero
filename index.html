@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,26 +10,29 @@
     
     <link rel="stylesheet" href="./CSS/style.css">
 
+    <script src="https://kit.fontawesome.com/fc2e4b1e25.js" crossorigin="anonymous"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter&display=swap" rel="stylesheet">
 
     <title>Estudio Gabo</title>
+    
 </head>
 
 <body>
 
     <header>
         
-       <nav>
-            <div class="Logo">
+       <nav class="contenedor">
+            <div id="logo">
                 <a href="#"><img src="./img/Logo.png" alt="Logo Gabo"> </a>
             </div>
-            <ul class="nav-links">
+            <ul>
                 <li><a href="./Pages/porfolio.html"> Porfolio </a></li>
                 <li><a href="./Pages/sobre_mi.html"> Sobre Mi </a></li>
-                <li><a href="./Pages/contacto.html" class="btn-contacto"> Contacto </a></li>
+                <li><a href="./Pages/contacto.html" id="btn-contacto"> Contacto </a></li>
             </ul>
         </nav> 
 
@@ -36,8 +40,8 @@
 
     <main>
         
-        <section id="portada">
-            <div class="portada-content">
+        <section class="contenedor" id="portada">
+            <div>
                 <h1>Diseño Gráfico</h1>
                 <p>#Branding #DiseñoUi/Ux #Ilustración #Producto</p>
             </div>
@@ -45,51 +49,52 @@
         
         <section id="casos">
             <div class="row row-cols-1 row-cols-md-3">
-
                 <div class="col">
                     <a href="./Pages/caso1.html">
                     <article id="caso1" class="caso">
-                    <h3>Caso 1</h3>
+                        <h3>Caso 1</h3>
                     </article>
                     </a>
                 </div>
                 <div class="col">
                     <a href="#">
                     <article id="caso2" class="caso">
-                    <h3>Caso 2</h3>
+                        <h3>Caso 2</h3>
                     </article>
                     </a>
                 </div>
                 <div class="col">
                     <a href="#">
                     <article id="caso3" class="caso">
-                    <h3>Caso 3</h3>
+                        <h3>Caso 3</h3>
                     </article>
                     </a>
                 </div>
-    
             </div>
         </section>
-
 
     </main>
 
     <footer>
 
-        <section class="content">
-            <ul class="redes">
-                <li><a href="https://www.behance.com" target="_blank"><img src="./img/Behance.png"></a></li>
-                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/Instagram.png"></a></li>
-                <li><a href="https://www.linkedin.com" target="_blank"><img src="./img/Linkedin.png"></a></li>
-                <li><a href="https://www.youtube.com" target="_blank"><img src="./img/YouTube.png"></a></li>
-            </ul>
-            <ul class="contacto">
-                <li>Montevideo, Uruguay</li>
-                <li>gabrielmedcap@gmail.com</li>
-                <li>(+598) 99 481 764</li>
-            </ul>
-        </section>
+        <nav class="contenedor">
+            <div id="contacto">
+                <span><a href="mailto:gabrielmedcap@hotmail.com"><i class="fa-solid fa-envelope"></i>gabrielmedcap@hotmail.com</span></a>
+                <span><a href="https://wa.me/59899481764" target="_blank"><i class="fa-solid fa-phone"></i>(+598) 99 481 764</span></a>
+                <span><a href="https://maps.app.goo.gl/KXENfeUVqMoEn3tG9" target="_blank"><i class="fa-solid fa-location-dot"></i>Cordón, Montevideo, Uruguay</span></a>
+            </div>
+            <div id="redes">
+                <li><a href="https://www.behance.com" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </div>
+        </nav>
 
+        <div id="legal">
+            <p>2023 © Gabo</p>
+        </div>
+       
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
