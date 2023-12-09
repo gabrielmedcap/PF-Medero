@@ -134,3 +134,79 @@ footer {
 footer li { 
     display: inline-block;
 }
+
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+}
+
+header nav {
+    height: 10vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo img {
+    height: 8vh;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header li {
+    margin-left: 24px;
+}
+
+header li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1.5px solid transparent;
+    transition: border-color 0.3s ease;
+    padding: 16px 32px;
+}
+
+header li a:hover {
+    border-color: #ccc;
+}
+
+header #btn-contacto {
+    background-color: black;
+    color: white;
+    padding: 16px 32px;
+}
+
+header .svg {
+    width: 3em;
+    height: 3em;
+    color: black;
+    display: none;
+}
+
+@media screen and (max-width: 480px){ 
+    header .svg{
+        display: block;
+    }
+    header nav ul{
+        width: 100%;
+        display: none;
+    }
+}
