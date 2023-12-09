@@ -37,10 +37,21 @@
 
     </header>
 
-    <main>
+    <main id="formDeContacto">
 
         <section class="contenedor">
-            <h1>Contacto</h1>
+
+            <div id="titulo">
+                <h2>Contacto</h2>
+            </div>
+
+            <form action="action_page.php">
+                <input type="text" id="fname" name="Nombre" placeholder="Nombre">
+                <input type="text" id="fname" name="Mail" placeholder="Mail">
+                <textarea id="subject" name="Detalles" placeholder="¿En que puedo ayudarte?" style="height:200px"></textarea>
+                <input type="submit" value="Enviar">
+              </form>  
+
         </section>
 
     </main>
