@@ -1,11 +1,11 @@
 /* ESTILO GLOBALES */
 
-* { margin: 0;
+* {
+    margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {  
+body {
     font-family: 'Inter', sans-serif;
 }
 
@@ -21,10 +21,18 @@ a {
 }
 
 h2 {
-    font-family:'Archivo Black', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
     font-size: 4rem;
     color: black;
 }
+
+@media screen and (max-width: 576px) {
+
+    .contenedor {
+        padding: 24px;
+    }
+}
+
 
 /* HEADER */
 
@@ -41,21 +49,22 @@ header {
 }
 
 .logo {
-   height: 64px;
+    height: 64px;
 }
 
-.nav-list { 
+.nav-list {
     list-style-type: none;
     display: flex;
     padding: 0;
     margin-bottom: 0;
 }
 
-li { 
+li {
     padding: 0;
 }
 
-.nav-list li a, #btn-cerrar {
+.nav-list li a,
+#btn-cerrar {
     text-decoration: none;
     color: black;
     border: 1px solid transparent;
@@ -65,7 +74,7 @@ li {
 }
 
 .nav-list li a:hover {
-    box-shadow: 0px 0px 4px 1px black;
+    box-shadow: 1px 1px 0px 1px black;
 }
 
 #btn-contacto {
@@ -82,7 +91,7 @@ li {
     display: none;
 }
 
-#btn-menu .svg { 
+#btn-menu .svg {
     width: 24px;
     height: 24px;
     color: black;
@@ -96,7 +105,6 @@ li {
 
     #header {
         height: 64px;
-        padding: 0px 24px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -104,7 +112,7 @@ li {
 
     .logo {
         height: 40px;
-    }     
+    }
 
     .nav {
         opacity: 0;
@@ -133,12 +141,13 @@ li {
     .nav-list li {
         margin: 16px 0px 16px 0px;
     }
-    
-    .nav-list li a, #btn-contacto {
-       color: white;
-       display: inline;
-       margin-left: 0px;
-       padding: 0px 0px;
+
+    .nav-list li a,
+    #btn-contacto {
+        color: white;
+        display: inline;
+        margin-left: 0px;
+        padding: 0px 0px;
     }
 
     #btn-cerrar {
@@ -156,7 +165,7 @@ li {
 
 /* MAIN */
 
-#portada { 
+#portada {
     height: 50vh;
     display: flex;
     align-items: center;
@@ -165,10 +174,8 @@ li {
 }
 
 #portada h1 {
-    font-family:'Archivo Black', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
     font-size: 8rem;
-    white-space: nowrap;
-    overflow: visible;
 }
 
 #portada p {
@@ -176,15 +183,30 @@ li {
     font-size: 2em;
 }
 
+@media screen and (max-width: 576px) {
+
+    #portada {
+        height: 35vh;
+        padding-bottom: 5vh;
+    }
+
+    #portada h1 {
+        font-size: 4rem;
+    }
+
+    #portada p {
+        font-size: 1.5em;
+    }
+}
+
 /* CASOS INDEX */
 
-#casos { 
+.casos {
     background-color: black;
 }
 
-#casos .row { 
+.casos .row {
     max-width: 1440px;
-    height: 40vh;
     padding: 0 8px 0 8px;
     margin-right: auto;
     margin-left: auto;
@@ -195,7 +217,6 @@ li {
 
 .col article {
     height: 40vh;
-    padding: 24px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -208,29 +229,55 @@ li {
 }
 
 .caso h3 {
-    font-style: italic;
     font-size: 2em;
     margin-bottom: 8px;
     color: white;
     position: absolute;
-    position: absolute;
     bottom: 0;
     left: 0;
-    margin: 0;
-    padding: 24px;
+    margin: 16px;
+    padding: 0px;
 }
 
-#caso1 { 
+#caso1 {
     background-image: url(../img/caso1.jpg);
 }
 
-#caso2 { 
+#caso2 {
     background-image: url(../img/caso2.jpg);
 }
 
-#caso3 { 
+#caso3 {
     background-image: url(../img/caso3.jpg);
 }
+
+@media screen and (max-width: 576px) {
+
+    .casos .row {
+        top: -3vh;
+    }
+
+    .col article {
+        height: 24vh;
+        margin-bottom: 24px;
+    }
+
+    .caso h3 {
+        font-size: 1.5em;
+    }
+
+    .casos.visible {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .casos {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
 
 /* FOOTER */
 
@@ -255,7 +302,7 @@ footer #contacto span {
     margin: 8px;
 }
 
-footer #contacto span a{
+footer #contacto span a {
     color: #888;
 }
 
@@ -263,12 +310,15 @@ footer #contacto span a:hover {
     color: white;
 }
 
-footer #redes li { 
+footer #redes li {
     display: inline-block;
 }
 
-.fa-brands {
+#redes span {
     margin-left: 16px;
+}
+
+.fa-brands {
     font-size: 32px;
     color: #888;
 }
@@ -285,10 +335,44 @@ footer #legal {
     padding-bottom: 40px;
 }
 
+@media screen and (max-width: 576px) {
+
+
+    footer nav {
+        margin-top: 0px;
+        margin-bottom: 80px;
+        display: block;
+    }
+
+    #contacto {
+        margin-bottom: 24px;
+    }
+
+    #contacto span {
+        display: block;
+    }
+
+    footer #contacto span {
+        margin-bottom: 16px;
+        margin-left: 0px;
+    }
+
+    #redes span {
+        margin-right: 16px;
+        margin-left: 0px;
+    }
+
+    footer #legal {
+        font-size: 12px;
+        justify-content: start;
+        padding-bottom: 20px;
+    }
+
+}
 
 /* FORM DE CONTACTO */
 
-#formDeContacto { 
+#formDeContacto {
     height: 90vh;
     display: flex;
     align-items: center;
@@ -298,7 +382,9 @@ footer #legal {
     margin-bottom: 16px;
 }
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 16px;
     border: 1.5px solid #ccc;
@@ -306,15 +392,15 @@ input[type=text], select, textarea {
     margin-top: 8px;
     margin-bottom: 8px;
     resize: vertical;
-  }
+}
 
-  input[type=submit] {
+input[type=submit] {
     background-color: black;
     color: white;
     margin-top: 16px;
     padding: 16px 42px;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     border-color: #ccc;
-  }
+}
