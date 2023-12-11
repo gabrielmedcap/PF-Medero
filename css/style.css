@@ -20,10 +20,20 @@ a {
     padding: 16px;
 }
 
+.row {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 h2 {
     font-family: 'Archivo Black', sans-serif;
     font-size: 4rem;
     color: black;
+}
+
+.fondoNegro{
+    background-color: black;
 }
 
 @media screen and (max-width: 576px) {
@@ -31,6 +41,11 @@ h2 {
     .contenedor {
         padding: 24px;
     }
+
+    h2 {
+        font-size: 3rem;
+    }
+
 }
 
 
@@ -42,7 +57,7 @@ header {
 }
 
 #header {
-    height: 80px;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,7 +119,7 @@ li {
     }
 
     #header {
-        height: 64px;
+        height: 5vh;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -120,7 +135,7 @@ li {
         position: absolute;
         width: 100%;
         height: 100%;
-        top: 65px;
+        top: 5vh;
         right: 0;
         padding: 0px 24px;
         background-color: black;
@@ -186,8 +201,8 @@ li {
 @media screen and (max-width: 576px) {
 
     #portada {
-        height: 35vh;
-        padding-bottom: 5vh;
+        height: 30vh;
+        padding-bottom: 3vh;
     }
 
     #portada h1 {
@@ -206,10 +221,7 @@ li {
 }
 
 .casos .row {
-    max-width: 1440px;
     padding: 0 8px 0 8px;
-    margin-right: auto;
-    margin-left: auto;
     align-items: center;
     position: relative;
     top: -5vh;
@@ -254,7 +266,7 @@ li {
 @media screen and (max-width: 576px) {
 
     .casos .row {
-        top: -3vh;
+        top: -2vh;
     }
 
     .col article {
@@ -402,5 +414,42 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    border-color: #ccc;
+    box-shadow: 1px 1px 0px 1px black;
+}
+
+/* SOBRE MI */
+
+#sobreMi .row {
+    padding: 16px;
+    align-items: center;
+}
+
+#sobreMi #fotoDePerfil {
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-image: url(../img/perfil.jpg);
+}
+
+.table table{
+    background-color: black;
+    /* no entiendo pk no cambia el color de la tabla */
+}
+
+@media screen and (max-width: 576px) {
+
+    #sobreMi .row {
+        padding: 24px;
+        align-items: start;
+    }
+
+    #sobreMi #fotoDePerfil {
+        height: 240px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        background-image: url(../img/perfil.jpg);
+    }
+
 }

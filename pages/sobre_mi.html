@@ -6,40 +6,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../CSS/style.css">
 
     <script src="https://kit.fontawesome.com/fc2e4b1e25.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter&display=swap" rel="stylesheet">
 
+
     <title>Sobre Mi - Estudio Gabo</title>
 </head>
 
 <body>
-
+    
     <header>
-  
-        <nav class="contenedor">
-            <div id="logo">
-                <a href="../index.html"><img src="../img/Logo.png" alt="Logo Gabo"> </a>
+        <section class="contenedor" id="header">
+            <div>
+                <a href="../index.html"><img class="logo" src="../img/Logo.png" alt="Logo Gabo"> </a>
             </div>
-            <ul>
-                <li><a href="./porfolio.html"> Porfolio </a></li>
-                <li><a href="#"> Sobre Mi </a></li>
-                <li><a href="./contacto.html" id="btn-contacto"> Contacto </a></li>
-            </ul>
-        </nav> 
 
+            <div id="btn-menu">
+                <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </div>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="./porfolio.html"> Porfolio </a></li>
+                    <li><a href="#"> Sobre Mi </a></li>
+                    <li><a href="./contacto.html" id="btn-contacto"> Contacto </a></li>
+                    <div id="btn-cerrar"><i class="bi bi-x-lg"></i> Cerrar</div>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </header>
 
-    <main>
-        <section class="contenedor">
-            <h1>Sobre mi</h1>
+    <main id="sobreMi">
+
+        <div class="row">
+            <div id="fotoDePerfil" class="col-4"></div>
+            <div id="textoDescriptivo" class="col-8">
+                <h3>Sobre Mi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit optio quas maxime sint consectetur adipisci architecto, nesciunt dolorum voluptates nihil provident quaerat vel hic sed facere impedit! Maxime, tempore optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit optio quas maxime sint consectetur adipisci architecto, nesciunt dolorum voluptates nihil provident quaerat vel hic sed facere impedit! Maxime, tempore optio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit optio quas maxime sint consectetur adipisci architecto, nesciunt dolorum voluptates nihil provident quaerat vel hic sed facere impedit! Maxime, tempore optio.</p>
+            </div>
+        </div>
+
+        <div class="contenedor" id="frase">
+            <h3>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit optio quas maxime sint consectetur adipisci architecto, nesciunt dolorum voluptates nihil provident quaerat vel hic sed facere impedit!"</h3>
+        </div>
+        
+        <section class="fondoNegro">
+            <div class="contenedor" id="formacion">
+                <table class="table table-dark">
+                  <thead>
+                    <tr>
+                      <th><h3>Formación</h3></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Licenciatura en diseño gráfico<br>Universidad de la República<br>Agosto 2023</td> 
+                    </tr>
+                    <tr>
+                        <td>Licenciatura en diseño gráfico<br>Universidad de la República<br>Agosto 2023</td> 
+                      </tr>
+                      <tr>
+                        <td>Licenciatura en diseño gráfico<br>Universidad de la República<br>Agosto 2023</td> 
+                      </tr>
+                  </tbody>
+                </table>
+            </div>
+            <div class="contenedor" id="experiencia">
+                <table class="table table-dark">
+                  <thead>
+                    <tr>
+                      <th><h3>Experiencia</h3></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Licenciatura en diseño gráfico<br>Universidad de la República<br>Agosto 2023</td> 
+                    </tr>
+                    <tr>
+                        <td>Licenciatura en diseño gráfico<br>Universidad de la República<br>Agosto 2023</td> 
+                      </tr>
+                      <tr>
+                        <td>Licenciatura en diseño gráfico<br>Universidad de la República<br>Agosto 2023</td> 
+                      </tr>
+                  </tbody>
+                </table>
+            </div>
         </section>
     </main>
 
@@ -47,23 +112,33 @@
 
         <nav class="contenedor">
             <div id="contacto">
-                <span><a href="mailto:gabrielmedcap@hotmail.com"><i class="fa-solid fa-envelope"></i>gabrielmedcap@hotmail.com</span></a>
-                <span><a href="https://wa.me/59899481764" target="_blank"><i class="fa-solid fa-phone"></i>(+598) 99 481 764</span></a>
-                <span><a href="https://maps.app.goo.gl/KXENfeUVqMoEn3tG9" target="_blank"><i class="fa-solid fa-location-dot"></i>Cordón, Montevideo, Uruguay</span></a>
+                <span><a href="mailto:gabrielmedcap@hotmail.com"><i
+                            class="fa-solid fa-envelope"></i>gabrielmedcap@hotmail.com</a></span>
+                <span><a href="https://wa.me/59899481764" target="_blank"><i class="fa-solid fa-phone"></i>(+598) 99 481
+                        764</a></span>
+                <span><a href="https://maps.app.goo.gl/KXENfeUVqMoEn3tG9" target="_blank"><i
+                            class="fa-solid fa-location-dot"></i>Cordón, Montevideo, Uruguay</a></span>
             </div>
             <div id="redes">
-                <li><a href="https://www.behance.com" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
-                <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <span><a href="https://www.behance.com" target="_blank"><i class="fa-brands fa-behance"></i></a></span>
+                <span><a href="https://www.instagram.com" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></span>
+                <span><a href="https://www.linkedin.com" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a></span>
+                <span><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></span>
             </div>
         </nav>
 
-        <div id="legal">
+        <div class="contenedor" id="legal">
             <p>2023 © Gabo</p>
         </div>
-        
+
     </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 </body>
 
