@@ -1,0 +1,57 @@
+
+#btn-contacto {
+    background-color: black;
+    color: white;
+    padding: 16px 32px;
+}
+
+#btn-cerrar {
+    display: none;
+    text-decoration: none;
+    padding: 16px 32px;
+    margin-left: 16px;
+}
+
+#btn-menu {
+    display: none;
+}
+
+#btn-menu .svg {
+    width: 24px;
+    height: 24px;
+    color: black;
+}
+
+@media screen and (max-width: 576px) {
+    #btn-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    #btn-contacto {
+        color: white;
+        display: inline;
+        margin-left: 0px;
+        padding: 0px 0px;
+    }
+
+    #btn-cerrar {
+        font-size: 16px;
+        display: inline;
+        margin-top: 32px;
+        margin-left: 0px;
+        padding: 0px 0px;
+        color: #ccc;
+    }
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    margin-top: 16px;
+    padding: 16px 42px;
+}
+
+input[type=submit]:hover {
+    box-shadow: 1px 1px 0px 1px black;
+}

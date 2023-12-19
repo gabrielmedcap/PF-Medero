@@ -1,0 +1,30 @@
+
+.contenedor {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+}
+
+.row {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.fondoNegro{
+    background-color: black;
+}
+
+@media screen and (max-width: 576px) {
+
+    .contenedor {
+        padding: 24px;
+    }
+
+}
+
+li {
+    padding: 0;
+}
+

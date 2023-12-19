@@ -1,0 +1,16 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 4rem;
+    color: black;
+}
+
+@media screen and (max-width: 576px) {
+    h2 {
+        font-size: 3rem;
+    }
+}
