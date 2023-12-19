@@ -1,0 +1,455 @@
+/* ESTILO GLOBALES */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+}
+
+.row {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 4rem;
+    color: black;
+}
+
+.fondoNegro{
+    background-color: black;
+}
+
+@media screen and (max-width: 576px) {
+
+    .contenedor {
+        padding: 24px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+}
+
+#header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 64px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+li {
+    padding: 0;
+}
+
+.nav-list li a,
+#btn-cerrar {
+    text-decoration: none;
+    color: black;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+    padding: 16px 32px;
+    margin-left: 16px;
+}
+
+.nav-list li a:hover {
+    box-shadow: 1px 1px 0px 1px black;
+}
+
+#btn-contacto {
+    background-color: black;
+    color: white;
+    padding: 16px 32px;
+}
+
+#btn-cerrar {
+    display: none;
+}
+
+#btn-menu {
+    display: none;
+}
+
+#btn-menu .svg {
+    width: 24px;
+    height: 24px;
+    color: black;
+}
+
+@media screen and (max-width: 576px) {
+    #btn-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    #header {
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 5vh;
+        right: 0;
+        padding: 0px 24px;
+        background-color: black;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        font-size: 16px;
+        width: 100%;
+        margin: 16px 0px 16px 0px;
+    }
+
+    .nav-list li {
+        margin: 16px 0px 16px 0px;
+    }
+
+    .nav-list li a,
+    #btn-contacto {
+        color: white;
+        display: inline;
+        margin-left: 0px;
+        padding: 0px 0px;
+    }
+
+    #btn-cerrar {
+        font-size: 16px;
+        display: inline;
+        margin-top: 32px;
+        margin-left: 0px;
+        padding: 0px 0px;
+        color: #ccc;
+        cursor: pointer;
+    }
+
+}
+
+
+/* MAIN */
+
+#portada {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding-bottom: 5vh;
+}
+
+#portada h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 8rem;
+}
+
+#portada p {
+    font-style: italic;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 576px) {
+
+    #portada {
+        height: 30vh;
+        padding-bottom: 3vh;
+    }
+
+    #portada h1 {
+        font-size: 4rem;
+    }
+
+    #portada p {
+        font-size: 1.5em;
+    }
+}
+
+/* CASOS INDEX */
+
+.casos {
+    background-color: black;
+}
+
+.casos .row {
+    padding: 0 8px 0 8px;
+    align-items: center;
+    position: relative;
+    top: -5vh;
+}
+
+.col article {
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.col article:hover {
+    filter: grayscale(0%);
+}
+
+.caso h3 {
+    font-size: 2em;
+    margin-bottom: 8px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 16px;
+    padding: 0px;
+}
+
+#caso1 {
+    background-image: url(../img/caso1.jpg);
+}
+
+#caso2 {
+    background-image: url(../img/caso2.jpg);
+}
+
+#caso3 {
+    background-image: url(../img/caso3.jpg);
+}
+
+@media screen and (max-width: 576px) {
+
+    .casos .row {
+        top: -2vh;
+    }
+
+    .col article {
+        height: 24vh;
+        margin-bottom: 24px;
+    }
+
+    .caso h3 {
+        font-size: 1.5em;
+    }
+
+    .casos.visible {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .casos {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    border-top: 1px solid #222222;
+}
+
+footer nav {
+    margin-top: 16px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-solid {
+    margin-right: 8px;
+}
+
+footer #contacto span {
+    margin: 8px;
+}
+
+footer #contacto span a {
+    color: #888;
+}
+
+footer #contacto span a:hover {
+    color: white;
+}
+
+footer #redes li {
+    display: inline-block;
+}
+
+#redes span {
+    margin-left: 16px;
+}
+
+.fa-brands {
+    font-size: 32px;
+    color: #888;
+}
+
+.fa-brands:hover {
+    color: white;
+}
+
+footer #legal {
+    color: white;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width: 576px) {
+
+
+    footer nav {
+        margin-top: 0px;
+        margin-bottom: 80px;
+        display: block;
+    }
+
+    #contacto {
+        margin-bottom: 24px;
+    }
+
+    #contacto span {
+        display: block;
+    }
+
+    footer #contacto span {
+        margin-bottom: 16px;
+        margin-left: 0px;
+    }
+
+    #redes span {
+        margin-right: 16px;
+        margin-left: 0px;
+    }
+
+    footer #legal {
+        font-size: 12px;
+        justify-content: start;
+        padding-bottom: 20px;
+    }
+
+}
+
+/* FORM DE CONTACTO */
+
+#formDeContacto {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+#formDeContacto #titulo {
+    margin-bottom: 16px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1.5px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    margin-top: 16px;
+    padding: 16px 42px;
+}
+
+input[type=submit]:hover {
+    box-shadow: 1px 1px 0px 1px black;
+}
+
+/* SOBRE MI */
+
+#sobreMi .row {
+    padding: 16px;
+    align-items: center;
+}
+
+#sobreMi #fotoDePerfil {
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-image: url(../img/perfil.jpg);
+}
+
+.table table{
+    background-color: black;
+    /* no entiendo pk no cambia el color de la tabla */
+}
+
+@media screen and (max-width: 576px) {
+
+    #sobreMi .row {
+        padding: 24px;
+        align-items: start;
+    }
+
+    #sobreMi #fotoDePerfil {
+        height: 240px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        background-image: url(../img/perfil.jpg);
+    }
+
+}
