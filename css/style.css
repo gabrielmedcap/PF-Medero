@@ -12291,5 +12291,37 @@ footer #legal {
     margin-top: 8px;
   }
 }
+#porfolio .casos {
+  background: linear-gradient(to bottom, white 45%, black 0%);
+}
+#porfolio .casos .row {
+  top: 0;
+}
+#porfolio .caso {
+  height: 70vh;
+}
+
+#servicios {
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#servicios h2, #servicios .h2 {
+  color: white;
+}
+#servicios hr {
+  border: 1px solid #888;
+}
+#servicios article {
+  padding: 24px;
+  display: block;
+  align-items: center;
+}
+#servicios article img {
+  height: 120px;
+}
+#servicios article #Branding {
+  background-image: url(../img/caso1.jpg);
+}
 
 /*# sourceMappingURL=style.css.map */
