@@ -1,18 +1,10 @@
-
-
 #porfolio {
-    #titulo {
-            h2 {
-            }
+    .casos {
+        background: $wb-background;
     }
 
-    
-    .casos {
-        background: linear-gradient(to bottom, white 45%, black 0%);
-
-        .row {
-            top: 0;
-        }
+    .row {
+        top: 0;
     }
 
     .caso {
@@ -26,11 +18,10 @@
     padding-top: 40px;
     padding-bottom: 40px;
 
-
     h2 {
         color: white;
     }
-    
+
     hr {
         border: 1px solid #888;
     }
@@ -44,10 +35,8 @@
             height: 120px;
         }
 
-
-       
         #Branding {
             background-image: url(../img/caso1.jpg);
-        }        
-     }
+        }
+    }
 }
