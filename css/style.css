@@ -12172,14 +12172,16 @@ footer #legal {
   filter: grayscale(0%);
 }
 .casos .caso h3, .casos .caso .h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: 8px;
   color: white;
   position: absolute;
   bottom: 0;
   left: 0;
   margin: 16px;
-  padding: 0px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: black;
 }
 .casos #caso1 {
   background-image: url(../img/caso1.jpg);
@@ -12332,7 +12334,43 @@ footer #legal {
   height: auto;
   margin-bottom: 32px;
 }
+#paginaCaso .row #txt {
+  padding: 32px;
+}
 
+@media screen and (max-width: 576px) {
+  #paginaCaso #portadaCaso {
+    height: auto;
+  }
+  #paginaCaso #portadaCaso h1, #paginaCaso #portadaCaso .h1 {
+    font-size: 3em;
+  }
+  #paginaCaso #portadaCaso h2, #paginaCaso #portadaCaso .h2 {
+    font-size: 1.5em;
+  }
+  #paginaCaso .row {
+    margin-top: 16px;
+  }
+  #paginaCaso .row div {
+    padding: 0 8px 0 8px;
+  }
+  #paginaCaso .row #descripcion {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  #paginaCaso .row h3, #paginaCaso .row .h3 {
+    font-size: 1.3em;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  #paginaCaso .row p {
+    margin-bottom: 24px;
+    line-height: 24px;
+  }
+  #paginaCaso .row #txt {
+    padding: 0px;
+  }
+}
 #porfolio .casos {
   background: linear-gradient(to bottom, white 45%, black 0%);
 }
