@@ -1,7 +1,6 @@
 #portada {
+    @include bloque;
     height: 50vh;
-    display: flex;
-    align-items: center;
     color: black;
     padding-bottom: 5vh;
 
@@ -13,23 +12,6 @@
     p {
         font-style: italic;
         font-size: 2em;
-    }
-}
-
-
-@media screen and (max-width: 576px) {
-
-    #portada {
-        height: 30vh;
-        padding-bottom: 3vh;
-
-        h1 {
-            font-size: 6em;
-        }
-        
-        p {
-            font-size: 2em;
-        }
     }
 }
 
@@ -79,32 +61,5 @@
     
     #caso3 {
         background-image: url(../img/caso3.jpg);
-    }
-}
-
-
-@media screen and (max-width: 576px) {
-
-    .casos {
-        opacity: 1;
-        visibility: visible;
-
-        .row {
-            top: -2vh;
-        }
-
-        .col article {
-            height: 24vh;
-            margin-bottom: 24px;
-        }
-    
-        .caso h3 {
-            font-size: 1.5em;
-        }
-    }
-
-    .casos.visible {
-        opacity: 0;
-        visibility: hidden;
     }
 }

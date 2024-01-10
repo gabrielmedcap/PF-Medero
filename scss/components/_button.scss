@@ -23,31 +23,6 @@
     }
 }
 
-@media screen and (max-width: 576px) {
-
-    #btn-menu {
-        display: block;
-        cursor: pointer;
-    }
-
-    #btn-contacto {
-        color: white;
-        display: inline;
-        margin-left: 0px;
-        padding: 0px 0px;
-    }
-
-    #btn-cerrar {
-        font-size: 16px;
-        display: inline;
-        margin-top: 32px;
-        margin-left: 0px;
-        padding: 0px 0px;
-        color: #ccc;
-        cursor: pointer;
-    }
-}
-
 input[type=submit] {
     background-color: black;
     color: white;

@@ -1,7 +1,6 @@
 #formDeContacto {
+    @include bloque;
     height: 90vh;
-    display: flex;
-    align-items: center;
 
     #titulo {
         margin-bottom: 16px;

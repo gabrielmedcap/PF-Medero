@@ -1,5 +1,7 @@
 @import "vendors/bootstrap";
 
+@import "abstracts/mixins";
+@import "abstracts/extends";
 @import "abstracts/variables";
 
 @import "base/reset";
@@ -16,4 +18,6 @@
 @import "pages/contacto";
 @import "pages/sobremi";
 @import "pages/caso";
-@import "pages/porfolio"
+@import "pages/porfolio";
+
+@import "base/media-queries";
