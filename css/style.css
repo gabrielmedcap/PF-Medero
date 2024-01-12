@@ -12224,7 +12224,7 @@ footer #legal {
   background-image: url(../img/caso1.jpg);
 }
 
-@media (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .contenedor {
     padding: 16px;
   }
@@ -12272,6 +12272,49 @@ footer #legal {
     margin-left: 0px;
     padding: 0px 0px;
   }
+  #btn-menu {
+    display: block;
+    cursor: pointer;
+  }
+  #btn-contacto {
+    color: white;
+    display: inline;
+    margin-left: 0px;
+    padding: 0px 0px;
+  }
+  #btn-cerrar {
+    font-size: 16px;
+    display: inline;
+    margin-top: 32px;
+    margin-left: 0px;
+    padding: 0px 0px;
+    color: #ccc;
+    cursor: pointer;
+  }
+  footer #footer {
+    margin-top: 0px;
+    margin-bottom: 80px;
+    display: block;
+    padding: 24px;
+  }
+  footer #contacto {
+    margin-bottom: 24px;
+  }
+  footer #contacto span {
+    display: block;
+    margin-bottom: 16px;
+    margin-left: 0px;
+  }
+  footer #redes span {
+    margin-right: 24px;
+    margin-left: 0px;
+  }
+  footer #legal {
+    font-size: 12px;
+    justify-content: start;
+    padding: 24px;
+    padding-bottom: 20px;
+  }
   #portada {
     height: 40vh;
     padding-bottom: 3vh;
@@ -12291,18 +12334,41 @@ footer #legal {
     top: -2vh;
   }
   .casos .col article {
-    height: 40vh;
+    height: 35vh;
     margin-bottom: 24px;
   }
   .casos .caso h3, .casos .caso .h3 {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   .casos.visible {
     opacity: 0;
     visibility: hidden;
   }
-}
-@media screen and (max-width: 576px) {
+  #porfolio .caso {
+    height: 35vh;
+  }
+  #servicios {
+    padding-top: 0px;
+  }
+  #servicios article img {
+    height: 80px;
+  }
+  #sobreMi .row {
+    padding: 24px;
+    align-items: start;
+  }
+  #sobreMi .row #fotoDePerfil {
+    height: 240px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-image: url(../img/perfil.jpg);
+  }
+  #sobreMi .row #textoDescriptivo {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 8px;
+  }
   #paginaCaso #portadaCaso {
     height: auto;
   }
@@ -12334,6 +12400,55 @@ footer #legal {
   #paginaCaso .row #txt {
     padding: 0px;
   }
+}
+@media screen and (min-width: 480px) and (max-width: 960px) {
+  .contenedor {
+    padding: 16px;
+  }
+  h2, .h2 {
+    font-size: 3rem;
+  }
+  #header {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  #header .logo {
+    height: 40px;
+  }
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 64px;
+    right: 0;
+    padding: 0px 24px;
+    background-color: black;
+  }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-list {
+    flex-direction: column;
+    font-size: 16px;
+    width: 100%;
+    margin: 16px 0px 16px 0px;
+  }
+  .nav-list li {
+    margin: 16px 0px 16px 0px;
+  }
+  .nav-list li a {
+    color: white;
+    display: inline;
+    margin-left: 0px;
+    padding: 0px 0px;
+  }
   #btn-menu {
     display: block;
     cursor: pointer;
@@ -12353,6 +12468,69 @@ footer #legal {
     color: #ccc;
     cursor: pointer;
   }
+  footer #footer {
+    margin-top: 0px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: start;
+    padding: 24px;
+  }
+  footer #contacto {
+    margin-bottom: 24px;
+  }
+  footer #contacto span {
+    display: block;
+    margin-bottom: 16px;
+    margin-left: 0px;
+  }
+  footer #redes span {
+    margin-right: 16px;
+    margin-left: 0px;
+  }
+  footer #legal {
+    font-size: 1em;
+    justify-content: start;
+    padding: 24px;
+    padding-bottom: 20px;
+  }
+  #portada {
+    height: 40vh;
+    padding-bottom: 3vh;
+  }
+  #portada h1, #portada .h1 {
+    font-size: 5em;
+  }
+  #portada p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+  .casos {
+    opacity: 1;
+    visibility: visible;
+  }
+  .casos .row {
+    top: -2vh;
+  }
+  .casos .col article {
+    height: 30vh;
+    margin-bottom: 24px;
+  }
+  .casos .caso h3, .casos .caso .h3 {
+    font-size: 1em;
+  }
+  .casos.visible {
+    opacity: 0;
+    visibility: hidden;
+  }
+  #porfolio .caso {
+    height: 60vh;
+  }
+  #servicios {
+    padding-top: 0px;
+  }
+  #servicios article img {
+    height: 80px;
+  }
   #sobreMi .row {
     padding: 24px;
     align-items: start;
@@ -12369,27 +12547,36 @@ footer #legal {
     padding-right: 0;
     margin-top: 8px;
   }
-  footer #footer {
-    margin-top: 0px;
-    margin-bottom: 80px;
-    display: block;
+  #paginaCaso #portadaCaso {
+    height: auto;
   }
-  footer #contacto {
+  #paginaCaso #portadaCaso h1, #paginaCaso #portadaCaso .h1 {
+    font-size: 3em;
+  }
+  #paginaCaso #portadaCaso h2, #paginaCaso #portadaCaso .h2 {
+    font-size: 1.5em;
+  }
+  #paginaCaso .row {
+    margin-top: 16px;
+  }
+  #paginaCaso .row div {
+    padding: 0 8px 0 8px;
+  }
+  #paginaCaso .row #descripcion {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  #paginaCaso .row h3, #paginaCaso .row .h3 {
+    font-size: 1.3em;
+    margin-top: 24px;
     margin-bottom: 24px;
   }
-  footer #contacto span {
-    display: block;
-    margin-bottom: 16px;
-    margin-left: 0px;
+  #paginaCaso .row p {
+    margin-bottom: 24px;
+    line-height: 24px;
   }
-  footer #redes span {
-    margin-right: 16px;
-    margin-left: 0px;
-  }
-  footer #legal {
-    font-size: 12px;
-    justify-content: start;
-    padding-bottom: 20px;
+  #paginaCaso .row #txt {
+    padding: 0px;
   }
 }
 
