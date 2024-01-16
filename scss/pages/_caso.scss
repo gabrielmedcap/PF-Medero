@@ -5,6 +5,14 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+
+        #titulo {
+            @include title-l;
+        }
+
+        #subtitulo {
+            @include title-m;
+        }
     }
 
     .row {
@@ -19,7 +27,8 @@
             padding-left: 32px;
         }
 
-        h3 {
+        .quote {
+            @include text-l;
             margin-top: 24px;
             margin-bottom: 24px;
         }

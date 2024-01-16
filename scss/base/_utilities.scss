@@ -20,3 +20,7 @@ li {
     padding: 0;
 }
 
+@mixin bloque {
+    display: flex;
+    align-items: center;
+}

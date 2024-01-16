@@ -11912,9 +11912,12 @@ li {
   padding: 0;
 }
 
-#btn-contacto {
-  background-color: black;
+.basebtn, input[type=submit], #btn-contacto {
+  background-color: rgb(7, 7, 7);
   color: white;
+}
+
+#btn-contacto {
   padding: 16px 32px;
 }
 
@@ -11935,8 +11938,6 @@ li {
 }
 
 input[type=submit] {
-  background-color: black;
-  color: white;
   margin-top: 16px;
   padding: 16px 42px;
 }
@@ -12044,6 +12045,13 @@ footer #legal {
 
 .casos {
   background-color: black;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .casos {
+    line-height: 2rem;
+  }
 }
 .casos .row {
   padding: 0 8px 0 8px;
@@ -12062,8 +12070,8 @@ footer #legal {
 .casos .col article:hover {
   filter: grayscale(0%);
 }
-.casos .caso h3, .casos .caso .h3 {
-  font-size: 1.5em;
+.casos .caso p {
+  font-size: 1.5rem;
   margin-bottom: 8px;
   color: white;
   position: absolute;
@@ -12090,7 +12098,16 @@ footer #legal {
   height: 90vh;
 }
 #formDeContacto #titulo {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 4rem;
+  color: black;
   margin-bottom: 16px;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #formDeContacto #titulo {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
 }
 #formDeContacto input[type=text], #formDeContacto select, #formDeContacto textarea {
   width: 100%;
@@ -12117,6 +12134,17 @@ footer #legal {
   padding-bottom: 48px;
   align-items: top;
 }
+#sobreMi .row #title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 4rem;
+  color: black;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #sobreMi .row #title {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
 #sobreMi .row #fotoDePerfil {
   height: auto;
   background-repeat: no-repeat;
@@ -12135,6 +12163,15 @@ footer #legal {
 #sobreMi #carrera {
   padding-top: 40px;
   padding-bottom: 56px;
+}
+#sobreMi #carrera th {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #sobreMi #carrera th {
+    line-height: 2rem;
+  }
 }
 #sobreMi #carrera span {
   margin: 20px, 0, 20px, 0;
@@ -12159,6 +12196,28 @@ footer #legal {
   align-items: flex-start;
   justify-content: center;
 }
+#paginaCaso #portadaCaso #titulo {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 4rem;
+  color: black;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #paginaCaso #portadaCaso #titulo {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+#paginaCaso #portadaCaso #subtitulo {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2rem;
+  color: black;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #paginaCaso #portadaCaso #subtitulo {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
 #paginaCaso .row {
   margin-top: 32px;
 }
@@ -12169,9 +12228,16 @@ footer #legal {
   padding-right: 32px;
   padding-left: 32px;
 }
-#paginaCaso .row h3, #paginaCaso .row .h3 {
+#paginaCaso .row .quote {
+  font-size: 1.5rem;
+  line-height: 3rem;
   margin-top: 24px;
   margin-bottom: 24px;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #paginaCaso .row .quote {
+    line-height: 2rem;
+  }
 }
 #paginaCaso .row p {
   margin-bottom: 16px;
@@ -12191,6 +12257,17 @@ footer #legal {
   padding: 32px;
 }
 
+#porfolio #titulo {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 4rem;
+  color: black;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #porfolio #titulo {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
 #porfolio .casos {
   background: linear-gradient(to bottom, white 45%, black 0%);
 }
@@ -12206,8 +12283,20 @@ footer #legal {
   padding-top: 50px;
   padding-bottom: 40px;
 }
-#servicios h2, #servicios .h2 {
-  color: white;
+#servicios #title {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin-bottom: 16px;
+  display: block;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #servicios #title {
+    line-height: 2rem;
+  }
+}
+#servicios p {
+  font-size: 1rem;
+  line-height: 2rem;
 }
 #servicios hr {
   border: 1px solid #888;
@@ -12371,12 +12460,7 @@ footer #legal {
   }
   #paginaCaso #portadaCaso {
     height: auto;
-  }
-  #paginaCaso #portadaCaso h1, #paginaCaso #portadaCaso .h1 {
-    font-size: 3em;
-  }
-  #paginaCaso #portadaCaso h2, #paginaCaso #portadaCaso .h2 {
-    font-size: 1.5em;
+    margin-top: 6vh;
   }
   #paginaCaso .row {
     margin-top: 16px;

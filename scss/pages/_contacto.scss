@@ -3,6 +3,7 @@
     height: 90vh;
 
     #titulo {
+        @include title-l;
         margin-bottom: 16px;
     }
 

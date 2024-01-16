@@ -24,3 +24,36 @@ p {
     font-size: 16px;
     line-height: 24px;
 }
+
+@mixin title-l {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 4rem;
+    color: black;
+    @media screen and (min-width: 320px) and (max-width: 480px){ 
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}
+
+@mixin title-m {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2rem;
+    color: black;
+    @media screen and (min-width: 320px) and (max-width: 480px){ 
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+@mixin text-l {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    @media screen and (min-width: 320px) and (max-width: 480px){ 
+        line-height: 2rem;
+    }
+}
+
+@mixin text-m {
+    font-size: 1rem;
+    line-height: 2rem;
+}

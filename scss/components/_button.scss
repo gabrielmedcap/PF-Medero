@@ -1,7 +1,11 @@
 
-#btn-contacto {
-    background-color: black;
+.basebtn {
+    background-color: rgb(7, 7, 7);
     color: white;
+}
+
+#btn-contacto {
+    @extend .basebtn;
     padding: 16px 32px;
 }
 
@@ -24,8 +28,7 @@
 }
 
 input[type=submit] {
-    background-color: black;
-    color: white;
+    @extend .basebtn;
     margin-top: 16px;
     padding: 16px 42px;
 }

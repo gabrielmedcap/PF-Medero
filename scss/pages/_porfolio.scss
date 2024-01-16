@@ -1,4 +1,9 @@
 #porfolio {
+
+    #titulo {
+        @include title-l;
+    }
+
     .casos {
         background: $wb-background;
     }
@@ -18,8 +23,14 @@
     padding-top: 50px;
     padding-bottom: 40px;
 
-    h2 {
-        color: white;
+    #title{
+        @include text-l;
+        margin-bottom: 16px;
+        display: block;
+    }
+
+    p {
+        @include text-m;
     }
 
     hr {
